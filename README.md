@@ -19,3 +19,7 @@ Another command worth mentioning is the `go mod edit` command, which allows you 
 This would make Go search for the example.com/greetings dependency in the parent directory, instead of as a published module.
 
 More information might be added here with time.
+
+To know more about a function, it is possible to run the `go doc` command, such as:
+
+`go doc fmt Prinln`
