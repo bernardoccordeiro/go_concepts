@@ -50,4 +50,15 @@ func main() {
 	a_car.set_top_speed(500)
 	fmt.Println(a_car.kmh())
 	fmt.Println(a_car.mph())
+
+	// Golang also has anonymous structs
+
+	aDoctor := struct{ name string }{name: "John Pertwee"}
+	fmt.Println(aDoctor)
+
+	// Go passes structs by value, so watch out for big struct copying
+	anotherDoctor := aDoctor
+	anotherDoctor.name = "Tom Baker"
+	fmt.Println(aDoctor)
+	fmt.Println(anotherDoctor)
 }
